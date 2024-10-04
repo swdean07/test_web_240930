@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid {
+            border: 5px solid pink;
+            /* 반응형으로, 한 행에서 나란히 배치하는 구조 */
+            display: grid;
+            /* 1열, 2열, 고정길이, fr: 나머지 전체 길이를 의미
+            예)  , 1fr 1fr 1:1 비율*/
+            grid-template-columns: 150px 1fr;
+    }
+        div {
+          border: 5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>화면 배치 작업 연습, grid 나열해보기.</h1>
+    <div id="grid">
+    <div>NAVIGATION</div> 
+    <div>ARTICLE</div>
+</body>
+</html>
