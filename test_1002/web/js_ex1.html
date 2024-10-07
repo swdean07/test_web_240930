@@ -73,6 +73,16 @@
             document.getElementById("result").innerText="아이디: "+id + ", 패스워드: " + password
         }
      </script>
+     
+     <input id="lunchmenu" type="text" placeholder="먹고싶은 점심메뉴 입력해주세요.">
+     <input type="button" value="메뉴 출력하기" onclick="showmenu()">
+     <h1 id="resultMenu"></h1>
+     <script>
+     function showmenu() {
+       const menu = document.getElementById("lunchmenu").value;
+       document.getElementById("resultMenu").innerText="내가 먹고 싶은 점심 메뉴: " + menu;
+   }
+</script>
 
 
 </body>
