@@ -9,17 +9,33 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+<<<<<<< HEAD
     <!-- 인풋 타입은 버튼이고, 해당 버튼의 라벨 night 이름이고,
+=======
+    <!-- 인풋 타입은 버튼이고, 해당 버튼의 라벨 night 이름이고, 
+>>>>>>> bf48ad5803a00f6ed654860029a86a062e9bc7e6
     클릭시, 2줄의 코드를 실행 -->
     <input type="button" value="night" onclick="
     // document : 객체를 의미, 
     // . : 구분자, 예), 키:값;
+<<<<<<< HEAD
     // querySelector : 메서드(=함수), 기능 동작을 한다. body 태그 선택기능
     // . : 구분자,
     // style : 속성,
     // . : 구분자,
     // backgroundColor : 속성, 배경을 변경하는 기능.
     // color : 글자 색을 변경함.
+=======
+    // querySelector('body') : 메서드(=함수), 기능 동작을 한다. body 태그 선택기능
+    // . : 구분자, 
+    // style : 속성,
+    // . : 구분자,
+    // backgroundColor : 속성, 배경을 변경하는 기능. 
+    // color : 글자 색을 변경함. 
+    // 결론, 해당 문서(document)에서, querySelector('body') 메서드를 이용해서 
+    // body 태그를 선택함. style 속성에서 배경색을 검정으로 변경하고, 
+    // 글자 색은 흰색으로 변경함.  
+>>>>>>> bf48ad5803a00f6ed654860029a86a062e9bc7e6
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('body').style.color = 'white';
     ">
@@ -28,6 +44,7 @@
     document.querySelector('body').style.backgroundColor = 'white';
     document.querySelector('body').style.color = 'black';
     ">
+<<<<<<< HEAD
     <div id="grid">
     <ol>
         <li><a href="1.html">HTML</a></li>
@@ -47,6 +64,33 @@
         and repetition in the structural content
     </p>
 </div>
+=======
+    <!-- 1번째열, 2번째열 하나로 묶기-> id = "grid" -->
+    <div id="grid">
+        <!-- 1번째 열, 한덩어리 -->
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <!-- 2번째 열, 한덩어리 -->
+        <div id="article">
+            <h2>CSS란 무엇인가?</h2>
+            <p style="margin-top: 40px;">
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+                of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology
+                of the World Wide Web, alongside HTML and JavaScript.[2]
+                CSS is designed to enable the separation of presentation and content, including layout,
+                colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility
+                and control in the specification of presentation characteristics; enable multiple web pages to
+                share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity
+                and repetition in the structural content
+            </p>
+        </div>
+        <!-- 2번째 열, 한덩어리 -->
+    </div>
+    <!-- 1번째열, 2번째열 하나로 묶기-> id = "grid" -->
+>>>>>>> bf48ad5803a00f6ed654860029a86a062e9bc7e6
 </body>
 
 </html>

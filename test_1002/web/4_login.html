@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +19,56 @@
         </form>
         <p>아직 회원이 아니신가요? <a href="signup.html">Sign up</a></p>
     </div>
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Style Login and Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div id="signup-form">
+                <h2>Sign Up</h2>
+                  <!-- 프로필 이미지 미리보기 영역 -->
+                  <div class="profile-img-container">
+                    <!-- 기본 이미지 지정 (여기서 default-avatar.png는 기본 이미지 파일 경로) -->
+                    <img id="profile-preview" src="user_profile.png" alt="Profile Image">
+                </div>
+
+                <!-- 파일 선택 input -->
+                <input type="file" id="profile-image-input" accept="image/*" onchange="previewImage(event)">
+                
+                <form>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    <button type="submit" onclick="signUp(event)">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="#" onclick="showLoginForm()">Log In</a></p>
+            </div>
+
+            <div id="login-form" class="hidden">
+                <h2>Log In</h2>
+                <form>
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button type="submit" onclick="logIn(event)">Log In</button>
+                </form>
+                <p>Don't have an account? <a href="#" onclick="showSignupForm()">Sign Up</a></p>
+            </div>
+
+            <div id="profile" class="hidden">
+                <h2>Profile</h2>
+                <p>Email: <span id="profile-email"></span></p>
+                <button onclick="logOut()">Log Out</button>
+            </div>
+        </div>
+    </div>
+
+>>>>>>> bf48ad5803a00f6ed654860029a86a062e9bc7e6
     <script src="script.js"></script>
 </body>
 </html>
