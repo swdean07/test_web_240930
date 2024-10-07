@@ -9,6 +9,31 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+
+    <input id="night_day" type="button" value="night" onclick="
+    if(this.value === 'night') {
+        var target = document.querySelector('body');
+        target.style.backgroundColor = 'black';
+      target.style.color= 'white';
+      this.value = 'day';   
+    } else {
+        var target = document.querySelector('body');
+        target.style.backgroundColor = 'white';
+        target.style.color= 'black';
+      this.value = 'night';   
+    }
+    ">
+
+<script>
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while ( i < alist.length) {
+        alist[i].style.color = 'blue';
+        console.log(alist[i]);
+        i = i + 1 ;
+    }
+</script>
+
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>

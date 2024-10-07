@@ -3,11 +3,7 @@ body {
 }
 
 a {
-<<<<<<< HEAD
-    color:rgb(119, 0, 255);
-=======
     color: rgb(204, 0, 255);
->>>>>>> bf48ad5803a00f6ed654860029a86a062e9bc7e6
 }
 
 h1 {
@@ -17,10 +13,6 @@ h1 {
     margin: 0;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bf48ad5803a00f6ed654860029a86a062e9bc7e6
 ol {
     border-right: 1px solid gray;
     width: 100px;
@@ -33,21 +25,6 @@ ol {
     grid-template-columns: 150px 1fr;
 }
 
-<<<<<<< HEAD
-/* 800px보다 작을 경우 동작     */
-@media(max-width :800px){
-        #grid {
-            display: block;
-        }
-
-        #grid ol {
-            border-right: none;
-        }
-
-        h1 {
-            border-bottom: none;
-        }
-=======
 /* 800 px 보다 작을 경우 동작  */
 @media(max-width :800px) {
     #grid {
@@ -61,5 +38,4 @@ ol {
     h1 {
         border-bottom: none;
     }
->>>>>>> bf48ad5803a00f6ed654860029a86a062e9bc7e6
 }
