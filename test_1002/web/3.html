@@ -10,29 +10,38 @@
 <body>
     <h1><a href="index.html">WEB</a></h1>
 
+    <!-- this,  해당 객체를 가리키는 키워드 , 
+    현재, input 속 안에서, this -> input 태그를 가리킴. -->
     <input id="night_day" type="button" value="night" onclick="
     if(this.value === 'night') {
         var target = document.querySelector('body');
         target.style.backgroundColor = 'black';
-      target.style.color= 'white';
-      this.value = 'day';   
+        target.style.color= 'white';
+      this.value = 'day';  
+
+    //   반복문 이용해서, 모든 a 태그의 컬러 값을 파우더 블로 변경하는 예시코드
+      var alist = document.querySelectorAll('a');
+        var i = 0;
+        while ( i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            console.log(alist[i]);
+            i = i + 1 ;
+        }
     } else {
         var target = document.querySelector('body');
         target.style.backgroundColor = 'white';
         target.style.color= 'black';
-      this.value = 'night';   
+      this.value = 'night';  
+      var alist = document.querySelectorAll('a');
+        var i = 0;
+        while ( i < alist.length) {
+            alist[i].style.color = 'blue';
+            console.log(alist[i]);
+            i = i + 1 ;
+        }
     }
     ">
-
-<script>
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while ( i < alist.length) {
-        alist[i].style.color = 'blue';
-        console.log(alist[i]);
-        i = i + 1 ;
-    }
-</script>
+     
 
     <div id="grid">
         <ol>
