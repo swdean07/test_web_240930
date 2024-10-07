@@ -3,7 +3,37 @@
  <head>
  <title>WEB1 - HTML </title>
  <meta charset="utf-8">
- 
+ <style>
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	h1 {
+		font-size: 45px;
+        text-align: center;
+	}
+    /* 약속, 클래스명으로 선택시 앞에 점 붙이기, 점클 이라 부름.  */
+    /* 아이샵이라고 부름. */
+    #active {
+		color: red;
+	}
+    /* 하나의 태그에 효과가 다른 두 클래스를 중첩하면, 
+    우선순위에 따라서 효과가 나타남. 
+    우선순위, 아랫 부분에 있을수록 우선순위가 높다 
+     .active 보다, .saw 아래에 있어서, 
+    */
+    /* .active 를 -> #active 로 변경했음. 
+    그러면, id , 해당 html 문서에 중복 되지 않아야하고, 
+    다른 문서랑 상관 없음. 
+    우선순위, 더 높음. 위치 상관없이.  */
+    .saw {
+        color: gray;
+    }
+
+  
+
+</style>
  </head>
  <body>
  <h1><a href="index.html">WEB</a></h1>
