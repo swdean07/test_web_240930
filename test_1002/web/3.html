@@ -4,9 +4,11 @@
 <head>
     <title>WEB1 - JavaScript </title>
     <meta charset="utf-8">
+    <!-- css 파일 분리 후 불러와서 재사용. -->
     <link rel="stylesheet" href="style.css" />
+    <!-- js 파일 분리 후 불러와서 재사용. -->
     <script src="colors.js"></script>
-
+ 
 </head>
 
 <body>
@@ -15,6 +17,10 @@
     <!-- this,  해당 객체를 가리키는 키워드 , 
     현재, input 속 안에서, this -> input 태그를 가리킴. -->
     <input type="button" value="night" onclick="nightDayHandler(this);">
+    <!-- 함수를 사용하는 부분 -->
+    <input id="night_day" type="button" value="night" onclick="nightDayHandler(this)">
+     
+
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>

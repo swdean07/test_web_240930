@@ -45,12 +45,25 @@
                         var coworkers = ["egoing", "leezche"];
                     </script>
                     <h2>get : 배열의 특정의 원소값 가져오기.</h2>
+
+                    <h1> Array </h1>
+                    <h2>Syntax,배열 정의,</h2>
+                    <script>
+                        var coworkers = ["egoing", "leezche"];
+                    </script>
+                    <h2>get : 배열의 특정의 원소값 가져오기. </h2>
+                    <script>
+                        document.write(coworkers[0]);
+                        document.write(coworkers[1]);
+                    </script>
+
                     <h2>add</h2>
                     <script>
                         coworkers.push('duru');
                         coworkers.push('taeho');
                     </script>
                     
+
                     <h2>count</h2>
                     <script>
                         document.write(coworkers.length);
@@ -63,6 +76,11 @@
                         document.write('<li>1</li>');
                         var i = 0;
                         while(i<3) {
+
+                    <script>
+                        document.write('<li>1</li>');
+                        var i = 0;
+                        while (i < 3) {
                             document.write('<li>2</li>');
                             document.write('<li>3</li>');
                             i = i + 1;
@@ -79,6 +97,22 @@
                           i = i + 1;
                         }
                       </script>
+
+                    <h2>Coworkers3</h2>
+                    <ul>
+                        <script>
+                            // 실제 실무 작업에서는 
+                            // coworkers 배열은, 실제로는 서버에서, 특정 데이터들을 
+                            // 받아와서 구성을 하고, 
+                            // 해당 데이터들을 , 배치를 하면서, 반복문이용해서, 화면
+                            // 그린다. 
+                            var coworkers = ["egoing", "leezche", "duru", "taeho"];
+                            var i = 0;
+                            while (i < 4) {
+                                document.write('<li>' + coworkers[i] + '</li>');
+                                i = i + 1;
+                            }
+                        </script>
                     </ul>
 </body>
 
